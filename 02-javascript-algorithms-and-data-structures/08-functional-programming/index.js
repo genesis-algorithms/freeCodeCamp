@@ -677,12 +677,11 @@ const printTitle = title => {
   console.groupEnd();
 })();
 
-() => {
+(() => {
   printTitle('15 - Use the reduce Method to Analyze Data');
   /*
     The variable watchList holds an array of objects with information on several movies. Use reduce to find the average IMDB rating of the movies directed by Christopher Nolan. Recall from prior challenges how to filter data and map over it to pull what you need. You may need to create other variables, and return the average rating from getRating function. Note that the rating values are saved as strings in the object and need to be converted into numbers before they are used in any mathematical operations.
   */
-  // The global variable
   var watchList = [
     {
       Title: 'Inception',
@@ -824,5 +823,9 @@ const printTitle = title => {
     return averageRating;
   };
 
-  console.log(getRating(watchList, 'ChristopherNolan'));
-};
+  const averageRating = getRating(watchList, 'Christopher Nolan');
+
+  console.log('averageRating:', averageRating);
+  /* averageRating: 8.675 */
+  console.groupEnd();
+})();
