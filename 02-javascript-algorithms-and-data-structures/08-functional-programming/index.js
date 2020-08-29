@@ -1,10 +1,10 @@
-const printTitle = title => {
+const groupTitle = title => {
   console.groupCollapsed(`%c${title}`, `color: lightgreen; text-align: left`);
 };
 
 /* 01 - Learn About Functional Programming */
 (() => {
-  printTitle('01 - Learn About Functional Programming');
+  groupTitle('01 - Learn About Functional Programming');
   /*
     The members of freeCodeCamp happen to love tea.
     In the code editor, the prepareTea and getTea functions are already defined for you.
@@ -36,7 +36,7 @@ const printTitle = title => {
 
 /* 02 - Understand Functional Programming Terminology' */
 (() => {
-  printTitle('02 - Understand Functional Programming Terminology');
+  groupTitle('02 - Understand Functional Programming Terminology');
   /*
     Prepare 27 cups of green tea and 13 cups of black tea and store
     them in tea4GreenTeamFCC and tea4BlackTeamFCC variables, respectively.
@@ -77,7 +77,7 @@ const printTitle = title => {
 
 /* 03 - Understand the Hazards of Using Imperative Code */
 (() => {
-  printTitle('03 - Understand the Hazards of Using Imperative Code');
+  groupTitle('03 - Understand the Hazards of Using Imperative Code');
   /*
     Examine the code in the editor. It's using a method that has side effects in the program, causing incorrect behaviour.\n The final list of open tabs, stored in finalTabs.tabs, should be ['FB', 'Gitter', 'Reddit', 'Twitter', 'Medium',\n 'new tab', 'Netflix', 'YouTube', 'Vine', 'GMail', 'Work mail', 'Docs', 'freeCodeCamp', 'new tab'] but the list produced by the code is slightly different.
 
@@ -127,7 +127,7 @@ const printTitle = title => {
 
 /* 04 - Avoid Mutations and Side Effects Using Functional Programming */
 (() => {
-  printTitle('04 - Avoid Mutations and Side Effects Using Functional Programming');
+  groupTitle('04 - Avoid Mutations and Side Effects Using Functional Programming');
   var fixedValue = 4;
 
   function incrementer() {
@@ -143,7 +143,7 @@ const printTitle = title => {
 
 /* 05 - Avoid Mutations and Side Effects Using Functional Programming */
 (() => {
-  printTitle('05 - Avoid Mutations and Side Effects Using Functional Programming');
+  groupTitle('05 - Avoid Mutations and Side Effects Using Functional Programming');
   const fixedValue = 4;
 
   function incrementer(n) {
@@ -159,7 +159,7 @@ const printTitle = title => {
 
 /* 06 - Refactor Global Variables Out of Functions */
 (() => {
-  printTitle('06 - Refactor Global Variables Out of Functions');
+  groupTitle('06 - Refactor Global Variables Out of Functions');
   const bookList = [
     'The Hound of the Baskervilles',
     'On The Electrodynamics of Moving Bodies',
@@ -213,7 +213,7 @@ const printTitle = title => {
 
 /* 07 - Use the map Method to Extract Data from an Array */
 (() => {
-  printTitle('07 - Use the map Method to Extract Data from an Array');
+  groupTitle('07 - Use the map Method to Extract Data from an Array');
   /*
     The watchList array holds objects with information on several movies. Use map on watchList to assign a new array of objects with only title and rating keys to the ratings variable. The code in the editor currently uses a for loop to do this, so you should replace the loop functionality with your map expression.
   */
@@ -375,7 +375,7 @@ const printTitle = title => {
 
 /* 08 - Implement map on a Prototype */
 (() => {
-  printTitle('08 - Implement map on a Prototype');
+  groupTitle('08 - Implement map on a Prototype');
   /*
     Write your own Array.prototype.myMap(), which should behave exactly like Array.prototype.map(). You may use a for loop or the forEach method.
   */
@@ -406,7 +406,7 @@ const printTitle = title => {
 
 /* 09 - Use the filter Method to Extract Data from an Array */
 (() => {
-  printTitle('09 - Use the filter Method to Extract Data from an Array');
+  groupTitle('09 - Use the filter Method to Extract Data from an Array');
   /*
     The variable watchList holds an array of objects with information on several movies. Use a combination of filter and map on watchList to assign a new array of objects with only title and rating keys. The new array should only include objects where imdbRating is greater than or equal to 8.0. Note that the rating values are saved as strings in the object and you may need to convert them into numbers to perform mathematical operations on them.
   */
@@ -566,7 +566,7 @@ const printTitle = title => {
 
 /* 10 - Implement the filter Method on a Prototype */
 (() => {
-  printTitle('10 - Implement the filter Method on a Prototype');
+  groupTitle('10 - Implement the filter Method on a Prototype');
   /*
     Write your own Array.prototype.myFilter(), which should behave exactly like Array.prototype.filter(). You may use a for loop or the Array.prototype.forEach() method.
   */
@@ -599,7 +599,7 @@ const printTitle = title => {
 
 /* 11 - Return Part of an Array Using the slice Method */
 (() => {
-  printTitle('11 - Return Part of an Array Using the slice Method');
+  groupTitle('11 - Return Part of an Array Using the slice Method');
   /*
     Use the slice method in the sliceArray function to return part of the anim array given the provided beginSlice and endSlice indices. The function should return an array.
   */
@@ -622,7 +622,7 @@ const printTitle = title => {
 
 /* 12 - Remove Elements from an Array Using slice Instead of splice */
 (() => {
-  printTitle('12 - Remove Elements from an Array Using slice Instead of splice');
+  groupTitle('12 - Remove Elements from an Array Using slice Instead of splice');
   /*
     Rewrite the function nonMutatingSplice by using slice instead of splice. It should limit the provided cities array to a length of 3, and return a new array with only the first three items.
 
@@ -644,7 +644,7 @@ const printTitle = title => {
 
 /* 13 - Combine Two Arrays Using the concat Method */
 (() => {
-  printTitle('13 - Combine Two Arrays Using the concat Method');
+  groupTitle('13 - Combine Two Arrays Using the concat Method');
   /*
     Use the concat method in the nonMutatingConcat function to concatenate attach to the end of original. The function should return the concatenated array.
   */
@@ -661,7 +661,7 @@ const printTitle = title => {
 })();
 
 (() => {
-  printTitle('14 - Add Elements to the End of an Array Using concat Instead of push');
+  groupTitle('14 - Add Elements to the End of an Array Using concat Instead of push');
   /*
     Change the nonMutatingPush function so it uses concat to add newItem to the end of original instead of push. The function should return an array.
   */
@@ -678,7 +678,7 @@ const printTitle = title => {
 })();
 
 (() => {
-  printTitle('15 - Use the reduce Method to Analyze Data');
+  groupTitle('15 - Use the reduce Method to Analyze Data');
   /*
     The variable watchList holds an array of objects with information on several movies. Use reduce to find the average IMDB rating of the movies directed by Christopher Nolan. Recall from prior challenges how to filter data and map over it to pull what you need. You may need to create other variables, and return the average rating from getRating function. Note that the rating values are saved as strings in the object and need to be converted into numbers before they are used in any mathematical operations.
   */
